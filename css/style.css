@@ -1,0 +1,50 @@
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #bbb;
+}
+.login{
+    width:400px;
+    height:350px;
+    margin:200px auto;
+}
+.bannerImage{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+.bannerImage img{
+    width: 100%;
+    -webkit-filter:grayscale(70%) invert(29%);
+            filter:grayscale(70%) invert(29%);
+}
+.bannerImage h1{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: #fff;
+    font-size: 60px;
+}
+.bannerImage small{
+    color: #fff;
+    font-size: 30px;
+}
+.bannerImage h3{
+    width: 650px;
+    text-indent: 2em;
+    position: absolute;
+    right: 100px;
+    top: 30%;
+    color: #fff;
+    line-height: 40px;
+}
+.foreignerBanner,.chineseBanner{
+    width: 100%;
+}
+.foreignerBanner img,.chineseBanner img{
+    width: 100%;
+}

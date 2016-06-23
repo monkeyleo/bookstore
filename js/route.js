@@ -1,0 +1,24 @@
+angular.module('mainApp.route',[])
+    .config(function($routeProvider){
+        $routeProvider
+            .when('/',{
+                templateUrl:'homepage.html'
+            })
+            .when('/chinese',{
+                templateUrl:'chinese.html'
+            })
+            .when('/foreigner',{
+                templateUrl:'foreigner.html'
+            })
+            .when('/chinese/:id',{
+                templateUrl:'bookdetail.html',
+                controller:'chineseBookDetailCtrl'
+            })
+            .when('/foreigner/:id',{
+                templateUrl:'bookdetail.html',
+                controller:'foreignerBookDetailCtrl'
+            })
+            .otherwise({
+                redirectTo:'/'
+            });
+    });

@@ -1,0 +1,33 @@
+<div class="foreignerBanner"></div>
+<ul class="list-group" ng-controller="foreignerListCtrl">
+  <li class="list-group-item" ng-repeat="book in foreignerBooks">
+    <div class="row">
+        <div class="col-sm-3">
+            <a ng-href="#/foreigner/{{book.id}}">
+                <img ng-src="/images/foreigner/{{book.thumbnail}}.jpg" alt="{{book.name}}" class="img img-responsive">
+            </a>
+        </div>
+        <div class="col-sm-9">
+            <div class="text-left">
+                <blockquote>
+                    <h2>{{book.name}}<small>{{book.author}}</small></h2>
+                    <p>
+                        {{book.pubdate}}
+                    </p>
+                </blockquote>
+                <h3>简介:</h3>
+                <a ng-href="#/foreigner/{{book.id}}">
+                    <span>{{book.des}}</span>
+                </a>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary" ng-click="flag=true">
+                    <span class="glyphicon glyphicon-shopping-cart">
+                        {{book.price | currency:"￥"}}
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+  </li>
+</ul>
